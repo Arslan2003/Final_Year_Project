@@ -1,12 +1,12 @@
 # Final Year Project – Multimodal Machine Learning for Stock Recommendation
 
-This repository contains the code and datasets used in my Final Year Project for the BSc (Hons) in Data Science at University of Greenwich. The project explores a **multimodal machine learning approach** to evaluate publicly listed companies by combining **time series modelling of historical stock prices** with **tabular analysis of financial metrics**.
+This repository contains the code and datasets used in my Final-Year Project for the BSc (Hons) in Data Science at University of Greenwich. The project explores a **multimodal machine learning approach** to evaluate publicly listed companies by combining **tabular analysis of financial metrics** with **time series modelling of historical stock prices**.
 
 The project 
 
 The methodology is inspired by value investing principles from *The Intelligent Investor* by Benjamin Graham. It seeks to determine whether a stock is **overvalued**, **fairly valued**, or **undervalued** based on both its historical performance and its current financial condition.
 
-## Highlights
+## Skills I gained from this project:
 
 - Complete end-to-end implementation: from project ideation and data acquisition to model training, optimisation, and deployment
 - Demonstrates skills in time series forecasting, financial data analysis, and modern ensemble learning (CatBoost)
@@ -86,7 +86,7 @@ This will:
 
 * Load preprocessed training, validation, and test data from `../../data/fin_metrics_pipeline/`
 * Train the CatBoostClassifier
-* Save the model and evaluation reports in the `inference/` folder
+* Save the model and evaluation reports in the `catboost_model.cbm` file
 
 ---
 
@@ -102,21 +102,21 @@ python lstm_main.py
 This will:
 
 * Load average monthly prices from `../../data/monthly_avg_stock_prices.csv`
-* Train an LSTM on 80% of companies and predict prices for the remaining 20%
-* Save prediction plots and metrics in the `inference/` folder
+* Train the model on the 9 years of historical monthly prices, and make predictions for the next 12 months
+* Save prediction plots and metrics in the `lstm_model.pt` file
 
 ---
 
 ## 📊 Results
 
-The model was evaluated on approximately **1,277 companies** listed on the **London Stock Exchange**, using:
+The results were evaluated on approximately **1,277 companies** listed on the **London Stock Exchange**, using:
 
 * 10 years of **monthly historical stock prices** (April 2015 – March 2025)
 * Most recent **financial metrics** (e.g., P/E ratio, revenue, total debt, etc.)
 
 ### Label Generation:
 
-A weak supervision approach based on *The Intelligent Investor* principles was used to create soft valuation labels from financial indicators such as debt levels, earnings stability, and market cap.
+A weak supervision approach based on *The Intelligent Investor* principles was used to create soft valuation labels from financial indicators such as debt levels, earnings stability, and market capitalisation.
 
 ---
 
@@ -129,8 +129,6 @@ Visual outputs include:
 * CatBoost feature importances (gain, split count)
 * Distribution of predicted valuations by industry
 
-These are either generated automatically in `inference/` or can be visualised using notebooks or matplotlib/seaborn from the saved data.
-
 ---
 
 ## 🧠 Model Performance
@@ -138,7 +136,7 @@ These are either generated automatically in `inference/` or can be visualised us
 ### CatBoost Classifier (Financial Metrics)
 
 * **Inputs**: 36 numerical features + 1 categorical industry feature
-* **Target**: 3-class ordinal label (undervalued / fair / overvalued)
+* **Target**: 3-class ordinal label (undervalued / fairly valued / overvalued)
 * **Metrics**:
 
   * Accuracy: \~\[Insert]
@@ -164,7 +162,7 @@ This repository is no longer actively maintained. However, future contributors m
 * Integrating CatBoost and LSTM outputs into a unified valuation system
 * Enhancing label quality with third-party analyst ratings or stock screeners
 * Applying the framework to other stock markets (e.g., NASDAQ, FTSE 100)
-* Incorporating NLP from earnings reports or sentiment from news sources
+* Incorporating NLP from earnings reports or sentiment analysis from news sources
 * Exploring alternative time-series models like Temporal Fusion Transformers (TFTs)
 
 If you build upon this project, feel free to fork it and cite it in your own work.
