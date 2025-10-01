@@ -105,13 +105,20 @@ python models/lstm_main.py
 
 <br>
 
-## Results
+## 📊 Results  
 
-- CatBoost Model achieved robust classification of company valuation using a combination of domain-driven financial metrics.
-- LSTM Model provides accurate 12-month forecasts of stock prices across multiple companies, capturing historical trends effectively.
-- The multimodal approach enables holistic stock recommendations that consider both company fundamentals and predicted market performance.
+- **CatBoost Model** classified companies into valuation categories (e.g., undervalued vs. overvalued) using domain-driven financial metrics.  
+- **LSTM Model** forecasted 12-month stock prices with strong accuracy across multiple companies, supporting forward-looking investment decisions.  
+- **Multimodal Approach** combined fundamentals and market forecasts, delivering holistic stock recommendations that **outperformed the FTSE-100 benchmark**.  
 
-> The pipeline and models are designed to be extendable, allowing integration of additional data sources or advanced ensemble strategies in future work.
+#### Performance (01 April 2024 – 31 March 2025):  
+
+- Multimodal Model Return: ![12.90%](https://img.shields.io/badge/Return-12.90%25-brightgreen)  
+- FTSE-100 Benchmark: ![8.16%](https://img.shields.io/badge/Return-8.16%25-blue)  
+
+>  The pipeline and models are designed to be extendable, allowing integration of additional data sources or advanced ensemble strategies in future work.
+
+
 
 <!--- Add concrete results --->
 ---
