@@ -81,6 +81,8 @@ If you would also like to get the updated list of companies that are listed on t
 
 > Tickers are used to find information about a company on Yahoo Finance through the yfinance library.
 
+<br>
+
 #### 2. Choose Your Models 
 - **CatBoost**:  
 ```
@@ -107,9 +109,7 @@ python models/lstm_main.py
 ## Results
 
 - CatBoost Model achieved robust classification of company valuation using a combination of domain-driven financial metrics.
-
 - LSTM Model provides accurate 12-month forecasts of stock prices across multiple companies, capturing historical trends effectively.
-
 - The multimodal approach enables holistic stock recommendations that consider both company fundamentals and predicted market performance.
 
 > The pipeline and models are designed to be extendable, allowing integration of additional data sources or advanced ensemble strategies in future work.
@@ -136,7 +136,7 @@ If you build upon this project, feel free to fork it and cite it in your own wor
 * [Yahoo Finance](https://finance.yahoo.com) – Data source
 * [CatBoost](https://catboost.ai/) – Gradient boosting classifier
 * [PyTorch](https://pytorch.org/) – Deep learning library used for LSTM
-* *The Intelligent Investor* by Benjamin Graham – Value investing inspiration
+* [The Intelligent Investor](https://irp-cdn.multiscreensite.com/cb9165b2/files/uploaded/The%20Intelligent%20Investor%20-%20BENJAMIN%20GRAHAM.pdf) by Benjamin Graham – Value investing inspiration
 * [Optuna](https://optuna.org/) – For hyperparameter tuning
 
 ---
