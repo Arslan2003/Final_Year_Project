@@ -53,8 +53,7 @@ Final_Year_Project/
    pip install -r requirements.txt
    ```
 
-
-> **Note**: You will need GPU-compatible versions of PyTorch for optimal LSTM training. CatBoost can also benefit from a GPU if available.
+> **Note**: For GPU acceleration, install PyTorch with the appropriate CUDA version. See [PyTorch Installation Guide](https://pytorch.org/get-started/locally/) for more information.
 
 
 ## ▶️ Usage
