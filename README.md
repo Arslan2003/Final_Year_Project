@@ -1,3 +1,8 @@
+
+<img width="100%" alt="fyp_banner" src="https://github.com/user-attachments/assets/2692f5e6-e68b-4498-ae23-a0ca375cf918" />
+
+
+
 # Final Year Project – Multimodal Machine Learning for Stock Recommendation
 
 This project implements an end-to-end multimodal machine learning pipeline to evaluate and recommend stocks listed on the London Stock Exchange. By combining historical stock price trends with company financial metrics, the project aims to provide a robust assessment of a company's investment potential. Unlike traditional single-source approaches, this system leverages multiple data modalities (numerical financial indicators and time-series stock data), allowing it to capture both long-term market trends and company-specific fundamentals.
