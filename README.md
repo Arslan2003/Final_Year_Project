@@ -123,9 +123,9 @@ python models/lstm_main.py
 <!--- Add concrete results --->
 ---
 
-## 🔮 Future Work
+## 🤝 Contributions
 
-This repository is no longer actively maintained. However, future contributors may consider:
+Contributions, suggestions, and improvements are welcome! Feel free to open an issue or submit a pull request. Here are a few starting ideas for improvements
 
 * Integrating CatBoost and LSTM outputs into a unified valuation system
 * Enhancing label quality with third-party analyst ratings or stock screeners
@@ -147,13 +147,18 @@ If you build upon this project, feel free to fork it and cite it in your own wor
 
 ---
 
-## Contribution
-Contributions, suggestions, and improvements are welcome! Feel free to open an issue or submit a pull request.
-
-## Author
+## 🧑‍💻 Author
 [Arslonbek Ishanov](https://github.com/Arslan2003) - First-Class Graduate Data Scientist & AI/ML Enthusiast
 
-## License
+<br>
+
+## ⚖️ License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full terms.
+
+<br>
+
+## 🏷️ Tags
+`Machine Learning` `Deep Learning` `Multimodal Learning` `Stock Recommendation` `Financial Modelling` `Time Series Forecasting` `CatBoost` `LSTM` `Investment Analysis` `Portfolio Optimisation` `FTSE-100` `Optuna` `Hyperparameter Tuning` `Value Investing` `Python` `PyTorch`
+
 
 
