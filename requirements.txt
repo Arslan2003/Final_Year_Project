@@ -1,0 +1,24 @@
+# Core libraries
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# Visualisation
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# CatBoost model
+catboost==1.2.5
+
+# Deep learning (for LSTM)
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# Utilities
+tqdm==4.66.4
+jupyter==1.0.0
+notebook==7.2.1
+
+# Optimisation
+optuna==3.6.1
